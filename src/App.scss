@@ -9,20 +9,15 @@ body * {
 .loginPage {
     background-image: url(img/background-128505-385441-537479.png);
     height: 100vh;
-    background-repeat: no-repeat;
     background-size: cover;
-
-}
-
-.loginHeader {
-    color: red;
 }
 
 .loginForm {
-    display: grid;
-    background-color: aqua;
-    width: 300px;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
+
+}
+
+.loginButton {
+    background-color: #E50914;
+    color: white;
+    padding: 7px 17px;
 }

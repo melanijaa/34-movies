@@ -90,26 +90,27 @@ function LoginPage() {
   };
   return (
     <div className="loginPage">
-      <h1 className="loginHeader">MOVIES</h1>
       <div className="loginForm">
-      <div>
-        name:{" "}
-        <input
-          type="text"
-          value={user}
-          onChange={(e) => setUser(e.target.value)}
-        ></input>
+        <div>
+          name:{" "}
+          <input
+            type="text"
+            value={user}
+            onChange={(e) => setUser(e.target.value)}
+          ></input>
+        </div>
+        <div>
+          password:{" "}
+          <input
+            type="password"
+            value={pass}
+            onChange={(e) => setPass(e.target.value)}
+          ></input>
+        </div>
+        <button className="loginButton" onClick={doLogin}>
+          Login
+        </button>
       </div>
-      <div>
-        password:{" "}
-        <input
-          type="password"
-          value={pass}
-          onChange={(e) => setPass(e.target.value)}
-        ></input>
-      </div>
-      </div>
-      <button onClick={doLogin}>Login</button>
     </div>
   );
 }
